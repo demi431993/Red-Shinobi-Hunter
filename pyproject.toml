@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "red-shinobi-hunter"
+version = "0.1.0"
+description = "Authorized defensive reconnaissance and exposure validation toolkit"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+red-shinobi-hunter = "red_shinobi_hunter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
